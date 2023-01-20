@@ -15,7 +15,7 @@ setuptools.setup(
     project_urls={
         'Documentation': '',
         'Bug Reports':
-        '',
+        'https://github.com/heartbit-dev/heartbit/issues',
         'Source Code': 'https://github.com/heartbit-dev/heartbit',
         # 'Funding': '',
         # 'Say Thanks!': '',
