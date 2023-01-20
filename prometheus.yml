@@ -1,0 +1,13 @@
+global:
+  scrape_interval: 30s
+
+scrape_configs:
+  - job_name: "prometheus"
+    scrape_interval: 5s
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: "exporters"
+    scrape_interval: 1m
+    static_configs:
+      - targets: ["linux-health:9100", "grafana:3000"]
