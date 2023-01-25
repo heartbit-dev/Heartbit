@@ -3,6 +3,7 @@ version: "3.9"
 volumes:
   prometheus_data:
   grafana_data:
+  mysql-health:
 
 services:
   prometheus:
