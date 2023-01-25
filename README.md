@@ -1,6 +1,6 @@
 ## Hearbit 🔊📊
 
-Hearbit is an open-source, enterprise-wide observability product that helps you monitor and understand the health of your systems. With Hearbit, you can easily collect, process, and analyze data from your entire infrastructure, including applications, networks, and servers.
+:heartbeat: Hearbit is an open-source, enterprise-wide observability product that helps you monitor and understand the health of your systems. With Hearbit, you can easily collect, process, and analyze data from your entire infrastructure, including applications, networks, and servers.
 
 # Features
 
