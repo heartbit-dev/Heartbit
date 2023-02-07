@@ -1,3 +1,5 @@
+# @format
+
 global:
   scrape_interval: 30s
 
@@ -10,4 +12,4 @@ scrape_configs:
   - job_name: "linux-health"
     scrape_interval: 5s
     static_configs:
-      - targets: ["linux-health:9100", "grafana:3000"]
+      - targets: ["linux-health:9100", "grafana:3000", "container-health:9101"]

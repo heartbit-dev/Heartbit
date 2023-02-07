@@ -1,9 +1,12 @@
+# @format
+
 version: "3.9"
 
 volumes:
   prometheus_data:
   grafana_data:
-  mysql-health:
+  linux-health:
+  container-health:
 
 services:
   prometheus:
@@ -17,6 +20,9 @@ services:
       - "--config.file=/etc/prometheus/prometheus.yml"
     ports:
       - 9090:9090
+    links:
+      - container:container
+      - linux:linux
 
   grafana:
     container_name: grafana
@@ -33,3 +39,8 @@ services:
     extends:
       file: ./modules/linux-heartbit/linux.yml
       service: linux-health
+
+  container:
+    extends:
+      file: ./modules/container-heartbit/container.yml
+      service: container-health
