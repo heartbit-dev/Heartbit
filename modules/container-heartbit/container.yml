@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  container-health:
+    image: google/cadvisor:latest
+    container_name: container-health
+    restart: unless-stopped
+    volumes:
+      - /:/rootfs:ro
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    expose:
+      - 9101
